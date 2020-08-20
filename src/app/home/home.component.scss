@@ -1,0 +1,44 @@
+//styling home.component.html
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+h1{
+    text-align: center;
+    margin:0 auto;
+    font-family: 'Alata', sans-serif;
+    font-size: 40px;
+    padding: 90px 10px 50px 10px;
+}
+
+.center-block{
+    font-size:40px;
+    input{
+        padding: 10px 10px 10px 10px;
+        margin: auto;
+        display: block;
+        text-align: center;
+        font-family: 'Alata', sans-serif;
+        font-size: 40px;
+        background: rgb(51, 14, 119);
+        border-style: groove;
+        color: white;
+    }
+    button{
+        background: rgb(181, 14, 78);
+        padding: 10px 60px;
+        font-family: 'Bangers', cursive;
+        font-size: 40px;
+        display: block;
+        color: white;
+        margin-top: 10px;
+        margin: auto;
+        border-style: hidden;
+        &:hover{
+            background: darken(rgb(181, 14, 78), 10%);
+        }
+        ::placeholder{
+            color: white;
+        }
+    }
+}

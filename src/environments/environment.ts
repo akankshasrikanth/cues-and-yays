@@ -2,8 +2,19 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+//Configuring the realtime database from Firebase
+
 export const environment = {
-  production: false
+  production: false,
+  firebase : {
+    apiKey: "AIzaSyDYYWZHEkF2_IKfOF1Z4trABG7kTf-_Aw4",
+    authDomain: "quiz-db-d6ef1.firebaseapp.com",
+    databaseURL: "https://quiz-db-d6ef1.firebaseio.com",
+    projectId: "quiz-db-d6ef1",
+    storageBucket: "quiz-db-d6ef1.appspot.com",
+    messagingSenderId: "1076014767629",
+    appId: "1:1076014767629:web:6399fe360a4e02ca91bf44"
+  }
 };
 
 /*

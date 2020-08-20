@@ -1,0 +1,56 @@
+<body>
+    <div *ngIf="questionIndex!=0">
+        <h3>Question {{questionIndex}}/11</h3>      <!--Question number-->
+        <h1>{{questionDetails.question}}</h1>       <!--Question-->
+        <!--Displaying options-->
+        <div class="radio-toolbar">
+            <form #mcq="ngForm" (submit)="submitAnswer(mcq,questionDetails.answer)">
+                <div>
+                    <input id="A" type="radio" value="A" name="option" ngModel=checked>
+                    <label for="A">{{questionDetails.A}}</label>
+                </div>
+                <div>
+                    <input id="B" type="radio" value="B" name="option" ngModel=checked>
+                    <label for="B">{{questionDetails.B}}</label>
+                </div>
+                <div>
+                    <input id="C" type="radio" value="C" name="option" ngModel=checked>
+                    <label for="C">{{questionDetails.C}}</label>
+                </div>
+                <div>
+                    <input id="D" type="radio" value="D" name="option" ngModel=checked>
+                    <label for="D">{{questionDetails.D}}</label>
+                </div>
+                <!--submit button-->
+                <div class="container">
+                    <button>Submit Answer</button>
+                </div>
+
+                <div class="play-container" *ngIf="clicked">
+                    <!--Correct/Wrong Answer Indicators-->
+                    <div class="play-container" *ngIf="val">
+                        <h1>{{bingo}}</h1>
+                    </div>
+                    <div class="container" *ngIf="!val">
+                        <h1>{{oops}}</h1>
+                    </div>
+                    <!--Navigating to different question (prev, next)-->
+                    <div class="play-container">{{questionDetails.fact}}</div>
+                    <div class="play-container" *ngIf="questionIndex==1"><button type="button" id="next"
+                            (click)="nextQuestion()">Next</button>
+                    </div>
+                    <div class="play-container" *ngIf="questionIndex==11">
+                        <button type="button" id="prev" (click)="prevQuestion()">Previous</button>
+                        <button type="button" id="end" (click)="endQuiz()">End</button>
+                    </div>
+                    <div class="play-container" *ngIf="questionIndex!=1">
+                        <div *ngIf="questionIndex!=totalQuestions">
+                            <button type="button" id="prev" (click)="prevQuestion()">Previous</button>
+                            <button type="button" id="next" (click)="nextQuestion()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

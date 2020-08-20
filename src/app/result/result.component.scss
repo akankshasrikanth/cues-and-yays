@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+//styling result.component.html
+
+h1{
+    text-align: center;
+    margin:0 auto;
+    font-family: 'Bangers', cursive;
+    font-size: 100px;
+    padding: 50px;
+    background-color: rgb(51, 14, 119);
+    color: white;
+    margin-top: 0.2em;
+}
+
+h2{
+    text-align: center;
+    margin:0 auto;
+    margin-top: 0.2em;
+    font-family: 'Bangers', cursive;
+    font-size: 100px;
+    background-color: rgb(181, 14, 78);
+    color: white;
+    strong{
+        font-family: 'Alata', sans-serif;
+        font-weight: bold;
+    }
+}
+button{
+    background: rgb(51, 14, 119);
+    padding: 20px 70px;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    display: block;
+    margin-top: 0.2em;
+    margin: auto;
+    color: white;
+    border-style: hidden;
+    &:hover{
+        background: darken(rgb(51, 14, 119), 10%);
+    }
+}

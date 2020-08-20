@@ -1,0 +1,116 @@
+//styling mcq1.component.html
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body{
+    text-align: center;
+    margin:0 auto;
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+}
+h3{
+    text-align: left;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    display: block;
+    margin-left: 20%;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+h1{
+    text-align:center;
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-bottom: 0em;
+}
+
+
+.play-container{
+    button{
+        background: rgb(181, 14, 78);
+        padding: 5px 5px;
+        font-family: 'Bangers', cursive;
+        font-size: 30px;
+        display: inline;
+        padding-left: 20%;
+        padding-right:20% ;
+        border-style: hidden;
+        &:hover{
+            background: black;
+            color: rgb(181, 14, 78);
+        }
+    }
+    h1{
+        font-family: 'Bangers', cursive;
+        font-size: 300%;
+        color: green;
+        font-weight: bold;
+    }
+    font-family: 'Alata', sans-serif;
+    color:black;
+    font-size: 105%;
+
+}
+    
+
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    h2{
+        text-align:center;
+        font-family: 'Alata', sans-serif;
+        font-size: 10px;
+    }
+    
+}
+.radio-toolbar label{
+    text-align: center;
+    background-color: rgb(245, 195, 224);
+    display: inline-block;
+    padding: 20px 10px;
+    font-family: 'Alata', sans-serif;
+    font-size: 120%;
+    border: none;
+    line-height: 0.5%;
+    margin-bottom: 0.2cm;
+    &:hover{
+        background:darken( rgb(245, 195, 224), 20%);
+    }
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: darken( rgb(245, 195, 224), 30%);
+}
+
+.container{
+    button{
+        background: black;
+        padding: 5px 5px;
+        font-family: 'Bangers', cursive;
+        font-size: 30px;
+        display: inline;
+        padding-left: 10%;
+        padding-right:10% ;
+        border-style: hidden;
+        color:rgb(181, 14, 78);
+        &:hover{
+            background:lighten(rgb(24, 22, 22),10%);
+            color: white;
+        }
+    }
+    h1{
+        font-family: 'Bangers', cursive;
+        font-size: 300%;
+        color: rgb(219, 5, 5);
+        font-weight: bold;
+    }
+
+    
+
+}
+
