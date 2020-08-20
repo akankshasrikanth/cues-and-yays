@@ -1,4 +1,4 @@
-# Cues and Yay!s - A Quiz App
+# Cues and Yay!s - A Quiz Web App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
